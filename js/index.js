@@ -42,3 +42,17 @@ button.addEventListener('dbclick', function(e){
 document.addEventListener('keydown', function(e){
     e.target.style.backgroundColor= '#17A2B8';
 });
+
+// MOUSE ENTER
+
+const image = document.querySelector('.img-content');
+
+image.addEventListener('mouseenter', function(e){
+    image.style.border = '5px dotted red';
+});
+
+// MOUSE LEAVE
+
+image.addEventListener('mouseleave', function(e){
+    image.style.border ='2px solid black';
+});
