@@ -14,3 +14,9 @@ logo.addEventListener('mouseover', function(e){
 
 const nav = document.querySelectorAll('.nav-link');
 console.log(nav);
+
+Array.from(document.links).forEach(function(link){
+    link.addEventListener('click', function(evn){
+        link.style.color ='green';
+    })
+})
