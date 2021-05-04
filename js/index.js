@@ -56,3 +56,12 @@ image.addEventListener('mouseenter', function(e){
 image.addEventListener('mouseleave', function(e){
     image.style.border ='2px solid black';
 });
+
+
+const btn = document.querySelectorAll('btn');
+
+Array.from(btn).forEach(function(btn){
+    btn.addEventListener('click', function(e){
+        btn.style.color ='red';
+    })
+});
